@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me | My Portfolio</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+    <header>
+        <a href="index.html" class="logo">
+            My <span>Portfolio.</span>
+        </a>
+
+        <nav>
+            <ul class="navbar">
+                <li><a href="index.html">⌂ Home</a></li>
+                <li><a href="about.html">♟ About</a></li>
+                <li><a href="contact.html">☎ Contact</a></li>
+                <li><a href="others.html">✉ Others</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="page-layout">
+
+    <nav class="side-navbar" id="sideNavbar">
+        <ul>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#project">Project</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#awards">Awards</a></li>
+            <li><a href="#hobbies">Hobbies</a></li>
+        </ul>
+    </nav>
+
+    <button type="button"
+        class="sidebar-toggle"
+        id="sidebarToggle"
+        onclick="toggleSidebar()">
+        ❯
+    </button>
+
+</div>
+        <main class="main-content">
+
+        
+           
+<section id="skills" class="skills">
+
+    <h1>Technical Skills</h1>
+
+    <div class="carousel-container">
+
+        <button class="arrow left" id="prev">&#10094;</button>
+
+        <div class="skills-wrapper" id="skillsWrapper">
+
+            <div class="skill-card">
+                <img src="html.jpe" alt="HTML">
+                <h3>HTML</h3>
+            </div>
+
+            <div class="skill-card">
+                <img src="css.jpe" alt="CSS">
+                <h3>CSS</h3>
+            </div>
+
+            <div class="skill-card">
+                <img src="figma.png" alt="Figma">
+                <h3>FIGMA</h3>
+            </div>
+
+            <div class="skill-card">
+                <img src="canva.jpe" alt="Canva">
+                <h3>CANVA</h3>
+            </div>
+
+            <div class="skill-card">
+                <img src="word.jpe" alt="Word">
+                <h3>WORD</h3>
+            </div>
+
+            <div class="skill-card">
+                <img src="excel.png" alt="Excel">
+                <h3>EXCEL</h3>
+            </div>
+
+            <div class="skill-card">
+                <img src="sheet.jpe" alt="Sheets">
+                <h3>SHEETS</h3>
+            </div>
+
+        </div>
+
+        <button class="arrow right" id="next">&#10095;</button>
+
+    </div>
+
+</section>
+
+      
+<section id="project" class="work-exp">
+
+    <h1>Work Experience</h1>
+
+    <div class="exp-carousel">
+
+        <button class="exp-arrow" id="exp-prev">&#10094;</button>
+
+        <div class="exp-container" id="exp-container">
+
+            <div class="exp-card">
+                <img src="w1.PNG" alt="Work Experience 1">
+            </div>
+
+            <div class="exp-card">
+                <img src="w2.PNG" alt="Work Experience 2">
+            </div>
+
+            <div class="exp-card">
+                <img src="w3.PNG" alt="Work Experience 3">
+            </div>
+
+            <div class="exp-card">
+                <img src="w4.jpg" alt="Work Experience 4">
+            </div>
+
+            <div class="exp-card">
+                <img src="w5.webp" alt="Work Experience 5">
+            </div>
+
+            <div class="exp-card">
+                <img src="w6.webp" alt="Work Experience 6">
+            </div>
+
+        </div>
+
+        <button class="exp-arrow" id="exp-next">&#10095;</button>
+
+    </div>
+
+</section>
+
+           
+<section id="education" class="education">
+
+    <h1>Education</h1>
+
+    <div class="gallery-wrapper">
+
+        <button class="gallery-arrow"
+        onclick="slideGallery('edu-container', -1)">
+        &#10094;
+        </button>
+
+        <div class="gallery-container" id="edu-container">
+
+            <div class="gallery-card">
+                <img src="coll.jpe" alt="College">
+                <h3>2025-Present</h3>
+                <h2>CSTC Sariaya</h2>
+            </div>
+
+            <div class="gallery-card">
+                <img src="shs.jpe" alt="Senior High School">
+                <h3>2024-2025</h3>
+                <h2>LINHS Sariaya</h2>
+            </div>
+
+            <div class="gallery-card">
+                <img src="hs.jpe" alt="High School">
+                <h3>2022-2023</h3>
+                <h2>CNHS Sariaya</h2>
+            </div>
+
+            <div class="gallery-card">
+                <img src="elem.jpe" alt="Elementary">
+                <h3>2018-2019</h3>
+                <h2>CANDA E.S.</h2>
+            </div>
+
+        </div>
+
+        <button class="gallery-arrow"
+        onclick="slideGallery('edu-container', 1)">
+        &#10095;
+        </button>
+
+    </div>
+
+</section>
+
+
+<section id="awards" class="award-sec">
+    <h1 style="color: #9e4cda; font-style: oblique; background-color: bisque;">
+        Awards
+    </h1>
+
+    <div class="award-wrapper">
+
+        <button type="button" class="award-arrow"
+            onclick="slideGallery('award-container', -1)">
+            &#10094;
+        </button>
+
+        <div class="award-container" id="award-container">
+
+            <div class="award-card">
+                <img src="AWRD1.jpe" alt="">
+                <h3>2023-2025</h3>
+                <h2>Senior High Consistent Honor</h2>
+            </div>
+
+            <div class="award-card">
+                <img src="AWRD2.jpe" alt="">
+                <h3>2026</h3>
+                <h2>Figma Workshop Certificate</h2>
+            </div>
+
+            <div class="award-card">
+                <img src="AWRD3.jpe" alt="">
+                <h3>2025</h3>
+                <h2>ITSC2026 SEMINAR</h2>
+            </div>
+
+            <div class="award-card">
+                <img src="AWRD4.jpe" alt="">
+                <h3>2022</h3>
+                <h2>Cooking Show</h2>
+            </div>
+
+        </div>
+
+        <button type="button" class="award-arrow"
+            onclick="slideGallery('award-container', 1)">
+            &#10095;
+        </button>
+
+    </div>
+</section>
+                            
+
+            <section id="hobbies" class="hobbies-sec">
+    <h1>Hobbies</h1>
+
+    <div class="hobbies-wrapper">
+
+        <button type="button" class="hobbies-arrow"
+            onclick="slideGallery('hobbies-container', -1)">
+            &#10094;
+        </button>
+
+        <div class="hobbies-container" id="hobbies-container">
+
+            <div class="hobbies-card">
+                <img src="W.PNG" alt="Watching">
+                <h2>Watching</h2>
+            </div>
+
+            <div class="hobbies-card">
+                <img src="R.PNG" alt="Reading">
+                <h2>Reading</h2>
+            </div>
+
+            <div class="hobbies-card">
+                <img src="C.PNG" alt="Cooking">
+                <h2>Cooking</h2>
+            </div>
+
+        </div>
+
+        <button type="button" class="hobbies-arrow"
+            onclick="slideGallery('hobbies-container', 1)">
+            &#10095;
+        </button>
+
+    </div>
+</section>
+
+        </main>
+    </div>
+
+    <footer class="footer">
+
+    <p>© 2026 My Personal Portfolio | All Rights Reserved</p>
+
+    <div class="footer-info">
+
+        <p>"Contact:" <span>099 222 123 211</span></p>
+        <p>"Email:" <span>keysichvz@gmail.com</span></p>
+        <p>"Facebook:" 
+            <a href="https://www.facebook.com/kc.dechavez.752">
+                KC De Chavez
+            </a>
+        </p>
+    </div>
+</footer>
+
+    <script src="index.js"></script>
+</body>
+</html>
